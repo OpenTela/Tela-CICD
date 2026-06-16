@@ -1,3 +1,23 @@
+# THIS REPOSITORY HAS MOVED
+
+> # The test framework now lives in **[OpenTela/TelaOS](https://github.com/OpenTela/TelaOS)** under [`ci/`](https://github.com/OpenTela/TelaOS/tree/future/ci).
+>
+> Tests and the firmware code are no longer split across two repositories.
+> This repo is **archived / read-only** and is kept only for history.
+>
+> **Run the tests from TelaOS:**
+> ```
+> bash ci/lib/build_libs.sh
+> python3 ci/build.py . --mock --rebuild
+> python3 ci/test.py .
+> ```
+> See [`docs/TESTING.md`](https://github.com/OpenTela/TelaOS/blob/future/docs/TESTING.md) for the testing principles.
+
+---
+
+<details>
+<summary>Original README (for historical reference)</summary>
+
 # TelaOS Test Suite — Compiler & Test Framework v3.1
 
 ## Changelog
@@ -217,3 +237,4 @@ int main() {
 | `build/mock/ not found` | `python3 build.py <path> --mock` |
 | `undefined reference` | Добавить стаб в `stubs/` или в `tests/externals.cpp` |
 | Тест упал после изменения кода | `build.py --mock` → `test.py -c` |
+</details>
